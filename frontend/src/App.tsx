@@ -107,7 +107,7 @@ export default function App() {
           <span>AgentBench SWE</span>
         </div>
         <a
-          href="https://github.com/yeabsira-mesfin/WeatherForecast"
+          href="https://github.com/yeabsira-mesfin/agentbench-swe"
           target="_blank"
           rel="noreferrer"
         >

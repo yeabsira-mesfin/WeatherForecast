@@ -2,9 +2,9 @@
 
 A versioned review workbench for evaluating coding-agent solutions across correctness, security, regression safety, and engineering quality.
 
-[![CI](https://github.com/yeabsira-mesfin/WeatherForecast/actions/workflows/ci.yml/badge.svg)](https://github.com/yeabsira-mesfin/WeatherForecast/actions)
+[![CI](https://github.com/yeabsira-mesfin/agentbench-swe/actions/workflows/ci.yml/badge.svg)](https://github.com/yeabsira-mesfin/agentbench-swe/actions)
 
-**Demo status:** public hosting is pending account permissions. No live URL is claimed. Run the local demo below. Intended repository slug: `agentbench-swe`; GitHub repository renaming is pending.
+**Demo status:** public hosting is pending account permissions. No live URL is claimed. Run the local demo below.
 
 ## Why this exists
 

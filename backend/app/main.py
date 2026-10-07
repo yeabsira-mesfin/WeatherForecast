@@ -6,7 +6,7 @@ from .tasks import TASKS, public_tasks
 import os
 
 app = FastAPI(title="AgentBench SWE API", version="1.0.0")
-app.add_middleware(CORSMiddleware, allow_origins=os.getenv("ALLOWED_ORIGINS", "http://localhost:5173").split(","), allow_methods=["GET","POST"], allow_headers=["Content-Type"])
+app.add_middleware(CORSMiddleware, allow_origins=os.getenv("ALLOWED_ORIGINS", "http://localhost:5173,https://yeabsira-mesfin.github.io").split(","), allow_methods=["GET","POST"], allow_headers=["Content-Type"])
 
 class Scores(BaseModel):
     correctness: float = Field(ge=0, le=100)
