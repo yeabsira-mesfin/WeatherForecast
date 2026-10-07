@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Activity, Bot, CheckCircle2, Code2, Github, ShieldCheck, TimerReset } from 'lucide-react';
+import { Activity, Bot, CheckCircle2, Code2,  ShieldCheck, TimerReset } from 'lucide-react';
 
 type Task = { id:string; title:string; language:string; difficulty:string; category:string; description:string; tests:number; hiddenTests:number };
 const tasks: Task[] = [
@@ -22,7 +22,7 @@ export default function App(){
   const categories=['All',...Array.from(new Set(tasks.map(t=>t.category)))];
   const visible=useMemo(()=>filter==='All'?tasks:tasks.filter(t=>t.category===filter),[filter]);
   return <main className="shell">
-    <nav><div className="brand"><Bot size={22}/><span>AgentBench SWE</span></div><a href="https://github.com/yeabsira-mesfin/WeatherForecast" target="_blank" rel="noreferrer"><Github size={18}/> GitHub</a></nav>
+    <nav><div className="brand"><Bot size={22}/><span>AgentBench SWE</span></div><a href="https://github.com/yeabsira-mesfin/WeatherForecast" target="_blank" rel="noreferrer">GitHub</a></nav>
     <section className="hero">
       <div><span className="eyebrow">AI SOFTWARE ENGINEERING EVALUATION</span><h1>Measure whether coding agents can solve real engineering work.</h1><p>Production-style tasks, hidden tests, security checks, regression detection, and rubric-based scoring in one benchmark dashboard.</p><div className="heroActions"><button onClick={()=>document.getElementById('tasks')?.scrollIntoView({behavior:'smooth'})}>Explore benchmark</button><span><CheckCircle2 size={17}/> Reproducible scoring</span></div></div>
       <div className="scoreCard"><span>Benchmark readiness</span><strong>24</strong><small>evaluation dimensions across six task families</small><div className="bar"><i style={{width:'88%'}}/></div><div className="mini"><div><b>94%</b><span>test determinism</span></div><div><b>6</b><span>task families</span></div><div><b>38</b><span>hidden tests</span></div></div></div>
